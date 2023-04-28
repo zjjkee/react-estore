@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    box-sizing: border-box;
+  }
+
+ul {
+    list-style-type: none;
+  }
+
+body {
+    font-family: "Roboto", sans-serif;
+  }
+
+div.App{
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "~bootstrap/scss/bootstrap";
+@import "./nav";
+@import "./product";
+@import "./pagebutton";
+@import "./footer";
+
+@import "./mycart"

@@ -1,0 +1,47 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+    .Product {
+    //   padding: 1rem;
+    margin: 30px 50px;
+      width: 400px;
+      height: 500px;
+      }
+      .imageContainer {
+        overflow:inherit;
+        height: 35vh;
+        
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: scale(1.25);
+          }
+        }
+      }
+      .cardbody{
+        position: relative;
+        .card-text{
+            z-index: 1;
+        }
+      }
+    }
+  
+button.cart{
+    margin-top: auto;
+    position: absolute;
+    width: 20%;
+    font-size: larger;
+    z-index: 0;
+    left: 10px;
+    bottom: 10px;
+}
+details{
+    z-index: 2;
+    font-size: small;
+}

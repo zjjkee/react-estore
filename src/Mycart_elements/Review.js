@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -73,7 +72,7 @@ export default function Review(props) {
           </Typography>
           <Grid container>
 
-  <Paypal setShowreview={props.setShowreview} setIsDeal={props.setIsDeal} addressinfo={props.addressinfo}/>
+  <Paypal setShowreview={props.setShowreview} addressinfo={props.addressinfo}/>
 
           </Grid>
         </Grid>

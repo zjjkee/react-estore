@@ -10947,7 +10947,7 @@ div.arrows input {
 
 @media (min-width: 1025px) {
   .h-custom {
-    height: 100% !important;
+    height: 100 !important;
   }
 }
 .horizontal-timeline .items {
@@ -11009,7 +11009,7 @@ div.QT {
 
 button.trash {
   position: absolute;
-  left: 100px;
+  right: 15%;
   top: 12px;
   border: none;
   background-color: white;

@@ -52,7 +52,7 @@ export function checkout_show(items){
   }
   let tax = Number((subtotal*taxrate).toFixed(2))
   let total = Number((subtotal+tax).toFixed(2))
-  subtotal = Number(subtotal)
+  subtotal = Number(subtotal.toFixed(2))
   taxrate = (Math.round(taxrate*10000))/100+'%'
   return {'taxrate':taxrate,'tax':tax,'subtotal':subtotal,'total':total}
 }

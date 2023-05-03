@@ -98,10 +98,10 @@ export default function Deal() {
                     <MDBCol lg="12">
                       <div className="horizontal-timeline">
                         <ul className="list-inline items d-flex justify-content-between">
-                          <li className="list-inline-item items-list">
+                          <li className="list-inline-item items-list" >
                             <p
                               className="py-1 px-2 rounded text-white"
-                              style={{ backgroundColor: "#CAE5BC" }}
+                              style={{ backgroundColor: " orange" }}
                             >
                               Ordered
                             </p>
@@ -114,19 +114,14 @@ export default function Deal() {
                               Shipped
                             </p>
                           </li>
-                          <li className="list-inline-item items-list">
+
+                          <li
+                            className="list-inline-item items-list text-end"
+                          >
                             <p
                               className="py-1 px-2 rounded text-white"
                               style={{ backgroundColor: "#CAE5BC" }}
-                            >
-                              On the way
-                            </p>
-                          </li>
-                          <li
-                            className="list-inline-item items-list text-end"
-                            style={{ marginRight: "-8px" }}
-                          >
-                            <p style={{ marginRight: "-8px" }}>Delivered</p>
+                            >    Delivered</p>
                           </li>
                         </ul>
                       </div>

@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import { useSelector,useDispatch } from "react-redux";
+import { useSelector} from "react-redux";
 import { checkout_show } from "../redux/itemslice";
 
 import { useNavigate } from 'react-router-dom'
@@ -41,7 +41,6 @@ export default function Paypal(props) {
     // check Approval
     const onApprove = (data, actions) => {
       return actions.order.capture().then(function (details) {
-        const { payer } = details;
         console.log(details)
         (function(){navigate('/deal',{ state: {
           addressinfo: props.addressinfo,
@@ -69,7 +68,8 @@ export default function Paypal(props) {
               className="paypalbutton"
               style={{ layout: "vertical" }}
               createOrder={createOrder}
-              onApprove={onApprove} />
+              onApprove={onApprove}
+              onError={onError} />
             
    
       </PayPalScriptProvider>

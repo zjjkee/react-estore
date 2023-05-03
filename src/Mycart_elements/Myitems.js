@@ -1,4 +1,4 @@
-import React,{useEffect, useState}  from "react";
+import React  from "react";
 import Button from 'react-bootstrap/Button';
 import { useSelector,useDispatch } from "react-redux";
 import { addone,minusone,removeitem,checkout_show} from "../redux/itemslice";
@@ -8,8 +8,6 @@ import {
     MDBCol,
     MDBContainer,
     MDBIcon,
-    MDBInput,
-    MDBRadio,
     MDBRow,
     MDBTable,
     MDBTableBody,
@@ -17,7 +15,7 @@ import {
   } from "mdb-react-ui-kit";
 
 
-export default function(props) {
+export default function Myitems(props) {
 
     const dispatch = useDispatch();
     const items = useSelector(state => state.item.value);

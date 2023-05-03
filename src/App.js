@@ -1,9 +1,9 @@
-import React,{useState} from "react";
+import React from "react";
 import { Routes, Route} from "react-router-dom"
 import Home from "./pages/Home"
 import Mycart from "./pages/Mycart";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer"
+// import Footer from "./components/Footer"
 
 
 
@@ -17,12 +17,11 @@ function App() {
 
   return (
     <div className="App">
-    <Nav />
       <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/mycart" element={<Mycart/>}/>
+          <Route path="/" element={ <><Nav /> <Home/></>}/>
+          <Route path="/mycart" element={<><Nav /><Mycart/></>}/>
           <Route path="/deal" element={<Deal/>} />
-        </Routes>
+      </Routes>
       {/* <Footer/> */}
     </div>
   );

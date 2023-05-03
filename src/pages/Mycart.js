@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import AddressForm from "../Mycart_elements/Addressform";
 import Review from "../Mycart_elements/Review";
 import Myitems from "../Mycart_elements/Myitems";
-import Deal from "./Deal";
 
 
 export default function SummaryPage() {
@@ -11,7 +10,6 @@ export default function SummaryPage() {
   const [showaddress, setShowaddress] = useState(false);
   const [showreview, setShowreview] = useState(false);
   const [addressinfo,setAddressinfo] = useState({});
-  const [isDeal,setIsDeal] = useState(false);
 
   const items = useSelector(state => state.item.value);
 
@@ -22,7 +20,7 @@ export default function SummaryPage() {
       
       <AddressForm showaddress={showaddress} setShowaddress={setShowaddress} setShowreview={setShowreview} setAddressinfo={setAddressinfo} addressinfo={addressinfo}/>
 
-      <Review setShowaddress={setShowaddress} showreview={showreview} setShowreview={setShowreview} addressinfo={addressinfo} setIsDeal={setIsDeal} />
+      <Review setShowaddress={setShowaddress} showreview={showreview} setShowreview={setShowreview} addressinfo={addressinfo} />
 
     </section>
   );

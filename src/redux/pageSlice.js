@@ -26,10 +26,8 @@ export const pageSlice = createSlice({ //！！！相当于创建store，actions
   }
 })
 
-
-
-
 // Action creators are generated for each case reducer function
 export const { nextpage,previouspage } = pageSlice.actions
+
 
 export default pageSlice.reducer

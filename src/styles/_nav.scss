@@ -20,3 +20,22 @@ nav {
     }
   }
 }
+
+
+span.logo{
+  color: transparent;  
+  text-shadow: 0 0 0 rgb(245, 243, 243);
+  position: relative;
+  div.dot{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: red;
+    text-align: center;
+    font-size: 1.10rem;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    z-index: 1 ;
+  }
+}

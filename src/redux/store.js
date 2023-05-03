@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import pageReducer from './pageslice/pageSlice'
+import pageReducer from './pageSlice'
 import itemRuducer from './itemslice'
 export default configureStore({
   reducer: {

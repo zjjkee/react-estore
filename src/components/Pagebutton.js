@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { nextpage,previouspage} from '../redux/pageslice/pageSlice'
+import { nextpage,previouspage} from '../redux/pageSlice'
 
 export default function Page() {
   const page = useSelector(state => state.page.value)

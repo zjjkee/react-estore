@@ -47,6 +47,19 @@ export default function Deal() {
                     </MDBCol>
                   </MDBRow>
 
+                  <MDBRow>
+                    <MDBCol className="mb-3">
+                      <p className="small text-muted mb-1">Details</p>
+                      <p>{state.addressinfo.firstname} {state.addressinfo.lastname}</p>
+                      <p>{state.addressinfo.phone}</p>
+                      <p>{state.addressinfo.address1+', '}{state.addressinfo.city+', '}{state.addressinfo.state+', '}
+                      {state.addressinfo.zip+', '}{state.addressinfo.country}
+                        </p>
+                      <p></p>
+                    </MDBCol>
+                  </MDBRow>
+
+
                   <div
                     className="mx-n5 px-5 py-4"
                     style={{ backgroundColor: "#f2f2f2" }}
@@ -129,16 +142,16 @@ export default function Deal() {
                   </MDBRow>
                   <p className="mt-4 pt-2 mb-0">
                     Want any help?{" "}
-                    <a href="#!" style={{ color: "#CAE5BC" }}>
+                    <a href="" style={{ color: "#CAE5BC" }}>
                       Please contact us
                     </a>
                   </p>
                   <button
                     className="py-1 px-2 rounded text-white"
                     style={{ backgroundColor: "#1097ea",border:"None",marginTop:'15px' }}
-                    onClick={()=>{dispatch(clearitems());navigate('/')}}
+                    onClick={()=>{dispatch(clearitems());navigate('/home')}}
                   >
-                    Done Shopping
+                    One More Order
                   </button>
 
                 </MDBCardBody>

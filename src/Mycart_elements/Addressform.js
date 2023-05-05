@@ -32,7 +32,7 @@ export default function AddressForm(props) {
       'zip':zip,
       'country':country
      })
-  },[firstName,lastName,address1,city,state,zip,country])
+  },[firstName,lastName,address1,phone,city,state,zip,country])
 
 
 

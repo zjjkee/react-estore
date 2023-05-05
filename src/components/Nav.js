@@ -16,7 +16,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <h3>Jingke's Store</h3>
+      <h3>JINGKE's STORE</h3>
       <ul>
         <li>
           <Link to="/">Home<span className="logo">🏠</span> </Link>

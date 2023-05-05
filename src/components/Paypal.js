@@ -42,13 +42,13 @@ export default function Paypal(props) {
     const onApprove = (data, actions) => {
       return actions.order.capture().then(function (details) {
         console.log(details)
+        alert("PAYMENT SUCCESSFULLY!")
         (function(){navigate('/deal',{ state: {
           addressinfo: props.addressinfo,
           id: details.id,
           update_time: details.update_time,
           status_: details.status
        } })}())
-        // dispatch(clearitems())
         
       });
     };
@@ -69,7 +69,7 @@ export default function Paypal(props) {
               style={{ layout: "vertical" }}
               createOrder={createOrder}
               onApprove={onApprove}
-              onError={onError} />
+              />
             
    
       </PayPalScriptProvider>

@@ -19,7 +19,7 @@ const Product = ({ data }) => {
 
 
   return (
-    <div>
+  <>
     <Card  className="Product" >
       <Card className='imageContainer'><Card.Img variant="top" src={data.image} onClick={handleShow}/></Card>
       <Card.Body className='cardbody'>
@@ -56,7 +56,7 @@ const Product = ({ data }) => {
         </Modal.Footer>
       </Modal>
     </>
-    </div>
+    </>
   );
 };
 

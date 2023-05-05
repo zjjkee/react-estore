@@ -13,7 +13,7 @@ export default function Home() {
             let parsedData = await rowdata.json();
             // console.log('data',data)
             let showdata = [];
-            for(let i=6*(page-1);i<6*page;i++){
+            for(let i=8*(page-1);i<8*page;i++){
                 if(parsedData[i]!==undefined){
                 showdata.push(parsedData[i])
                 }
@@ -25,6 +25,13 @@ export default function Home() {
 
     return (
     <div style={{ minHeight: "100vh"}}>  
+        <img className='image' style={{width:'100%', }} src={"https://amazonproone.vercel.app/static/media/img2.bc1bdb910ead16c65197.jpg"} alt=''/>
+        <div style={{display:'flex',justifyContent:'center',}}>
+            <div style={{marginTop:'20px',backgroundColor:'#FFBE4D',}}>
+                <h3 style={{padding:'15px'}}>Our Product</h3>
+            </div>     
+        </div>
+        
         <div className="products" >
             {data &&
             data.map((d) => {

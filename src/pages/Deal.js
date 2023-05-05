@@ -149,7 +149,7 @@ export default function Deal() {
                   <button
                     className="py-1 px-2 rounded text-white"
                     style={{ backgroundColor: "#1097ea",border:"None",marginTop:'15px' }}
-                    onClick={()=>{dispatch(clearitems());navigate('/home')}}
+                    onClick={()=>{dispatch(clearitems());navigate('/shopping')}}
                   >
                     One More Order
                   </button>

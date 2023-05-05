@@ -19,10 +19,11 @@ const Nav = () => {
       <h3>JINGKE's STORE</h3>
       <ul>
         <li>
-          <Link to="/">Home<span className="logo">🏠</span> </Link>
+          <Link to="/shopping"><span className="text">Shopping</span><span className="logo">🏠</span> </Link>
         </li>
         <li>
-          <Link to="/mycart">MyCart
+          <Link to="/mycart"> 
+            <span className="text">Mycart</span>
             <span className="logo">🛒 
            <Dot />
             </span>

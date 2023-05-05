@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-          <Route path="/" element={<Index />}/>
-          <Route path="/home" element={<><Nav /> <Home/> </> }/>
+          <Route path="/" element={<><Nav/> <Index /></>}/>
+          <Route path="/shopping" element={<><Nav /> <Home/> </> }/>
           <Route path="/mycart" element={<><Nav /><Mycart/></>}/>
           <Route path="/deal" element={<Deal/>} />
       </Routes>

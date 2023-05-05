@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
-import zIndex from '@mui/material/styles/zIndex';
 
 export const Index = () => {
 
@@ -15,20 +13,21 @@ export const Index = () => {
 
   return (
     <>
-     <nav style={{height:'7vh'}}>
-        <h3>JINGKE's STORE</h3>
-     </nav>
-
       <div style={{minHeight:'100%'}}>
         <div className='imagecontainer' style={{pistion:'relative'}}>
-          <img className='image' style={{width:'100%'}}  src={data[0]} alt=''/>
-          <div style={{display:'flex',justifyContent:'center'}}>
-            <Button style={{position:'absolute' ,zIndex:'1', width:'40vh',height:'60px',top:'70%'}} variant="warning">
-                <a href="/home" style={{textDecoration:'none',color:'white',fontSize:'1.5rem'}}> Go Shopping</a></Button>
+          <img className='image1 img' src={data[0]} alt=''/>
+          <img className='image4 img' src={data[3]} alt=''/>
+          
+          <div className='phone'> 
+            <img className='image2 img' src={data[1]} alt=''/>
+            <img className='image3 img' src={data[2]} alt=''/>
           </div>
-          <img className='image' style={{width:'100%', }} src={data[3]} alt=''/>
-          <img className='w-screen h-full object-cover' style={{width:'100%', }}  src={data[1]} alt=''/>
-          <img className='w-screen h-full object-cover' style={{width:'100%', }} src={data[2]} alt=''/>
+          <div  id='button' classname='btcontainer'  >
+            <Button  className='shopping' variant="warning">
+                <a href="/shopping"  className='aaa'> Go Shopping</a>
+            </Button>
+          </div>
+
         </div>
 
       </div>      

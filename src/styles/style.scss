@@ -32,10 +32,11 @@ div.App{
 
 
 @import "~bootstrap/scss/bootstrap";
+@import "./index";
 @import "./nav";
 @import "./product";
 @import "./pagebutton";
 @import "./deal";
 @import "./footer";
-
-@import "./mycart"
+@import "./home";
+@import "./mycart";

@@ -10860,8 +10860,8 @@ img.img {
   }
   #button {
     position: absolute;
-    left: 45%;
-    bottom: 30%;
+    left: 43%;
+    bottom: 25%;
     width: 15vw;
     height: 7vh;
   }
@@ -11047,6 +11047,11 @@ div.text .text_ {
   height: 5vh;
   text-align: center;
   background-color: #FFC152;
+}
+div.text .text_ h4, div.text .text_ .h4 {
+  padding: 10px;
+  margin-bottom: 0px;
+  font-size: 1.2rem;
 }
 
 table td {

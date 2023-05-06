@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   MDBCard,
   MDBCardBody,
@@ -6,6 +6,7 @@ import {
   MDBContainer,
   MDBRow
 } from "mdb-react-ui-kit";
+import Modal from 'react-bootstrap/Modal';
 import { useSelector,useDispatch } from "react-redux";
 import { clearitems } from "../redux/itemslice";
 import { useLocation } from 'react-router-dom';
@@ -24,9 +25,37 @@ export default function Deal() {
   const dispatch = useDispatch();
   const items = useSelector(state => state.item.value)
 
-  return (
+  const[show,setShow] = useState(true) 
+  function handleClose(){
+    setShow(false)
+  }
+
+
+  if(!items[0]){
+    return (
+     <div className="empty" style={{minHeight:"100vh" }}>
+      <div className="blank"></div>
+      <h1 >You Have NO Order Yet!</h1>
+      <a href="/">Let's Go Shopping!</a>
+      <div className="blank"></div>
+    </div> 
+    )
+  } else{
+
+  return (<>
+
     <>
-      <section className="h-100 h-custom" style={{ backgroundColor: "#eee",minHeight:"100vh"}}>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Congratulations</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Payment Successfully!</p>
+        </Modal.Body>
+      </Modal>
+    </>
+
+     <section className="h-100 h-custom" style={{ backgroundColor: "#eee",minHeight:"100vh"}}>
         <MDBContainer className="py-5 h-100">
           <MDBRow className="justify-content-center align-items-center h-100">
             <MDBCol lg="8" xl="6">
@@ -161,5 +190,5 @@ export default function Deal() {
         </MDBContainer>
       </section>
     </>
-  );
+  )}
 }

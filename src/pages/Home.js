@@ -29,7 +29,7 @@ export default function Home() {
         <img className='image'  src={"https://amazonproone.vercel.app/static/media/img2.bc1bdb910ead16c65197.jpg"} alt=''/>
         <div className="text">
             <div className="text_">
-                <h4 style={{padding:'10px'}}>Our Product</h4>
+                <h4 style={{padding:'10px',margin:'0px'}}>Our Product</h4>
             </div>
         </div>
         
